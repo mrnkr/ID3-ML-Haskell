@@ -1,6 +1,9 @@
 {-# OPTIONS_GHC -fno-warn-tabs #-}
 {-#LANGUAGE GADTs, EmptyDataDecls, EmptyCase #-}
 
+-- @author Alvaro Nicoli - 220159 - Universidad ORT
+-- @author Noela Pence - 201375 - Universidad ORT
+
 module ID3 where
   import Datos
   import Auxiliares
@@ -50,5 +53,3 @@ module ID3 where
 
   clasificacion :: [(Nombre,Clase)]
   clasificacion = map (clasificar arbol) tests
-
-

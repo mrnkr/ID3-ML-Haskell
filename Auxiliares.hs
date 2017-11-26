@@ -1,4 +1,8 @@
 {-# OPTIONS_GHC -fno-warn-tabs #-}
+
+-- @author Alvaro Nicoli - 220159 - Universidad ORT
+-- @author Noela Pence - 201375 - Universidad ORT
+
 module Auxiliares where
   import Datos
     

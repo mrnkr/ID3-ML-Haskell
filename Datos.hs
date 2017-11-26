@@ -1,6 +1,9 @@
 {-# OPTIONS_GHC -fno-warn-tabs #-}
-module Datos where
 
+-- @author Alvaro Nicoli - 220159 - Universidad ORT
+-- @author Noela Pence - 201375 - Universidad ORT
+
+module Datos where
 	data Atributo = Fiebre | Moco | Rubor | DolorArtic | DolorCabeza
 		deriving (Eq,Ord,Enum,Show)
 			
