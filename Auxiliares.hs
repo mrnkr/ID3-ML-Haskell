@@ -20,6 +20,7 @@ module Auxiliares where
   -- fromEnum Incubando = 2
 
   --2
+  -- Comentar para realizar pruebas con sets de datos alternativos
   clase :: Nombre -> [Registro] -> Clase
   clase = \n -> \r -> case r of {
     [] -> Sano;
@@ -70,9 +71,9 @@ module Auxiliares where
   }
 
   prop :: Clase -> Atributo -> [Registro] -> Float
-  prop = \c -> \a -> \rs -> case rs of {
-    [] -> 0.0;
-    x : xs -> (fromIntegral (length (inter (regsAtrB a True rs) (regsClase c rs))) / fromIntegral (length (regsClase c rs)))
+  prop = \c -> \a -> \rs -> case ((length rs) == 0) || ((length (regsClase c rs)) == 0) of {
+    True -> 0.0;
+    False -> ((fromIntegral (length (inter (regsAtrB a True rs) (regsClase c rs)))) / (fromIntegral (length (regsClase c rs))))
   }
 
   --7
@@ -88,9 +89,9 @@ module Auxiliares where
   --8
   entrAtr :: [Atributo] -> [Registro] -> Atributo -> Float
   entrAtr = \ats -> \rs -> \a -> case (elem a ats) of {
-    True -> case rs of {
-      [] -> 0.0;
-      x : xs -> - sum (map (\x -> entrAtrClase x a rs) clases)
+    True -> case (length rs) == 0 of {
+      True -> 0.0;
+      False -> - sum (map (\c -> entrAtrClase c a rs) clases)
     };
     False -> 1.0
   }

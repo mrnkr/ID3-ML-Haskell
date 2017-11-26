@@ -1,0 +1,64 @@
+-- Si chiama
+
+id3 
+
+[("Diego",Enfermo,[True,True,True,True,True]),("Juan",Sano,[False,False,False,False,False]),
+("Manuela",Incubando,[False,True,True,False,True]),("Nora",Sano,[False,True,False,False,True]),
+("JPablo",Enfermo,[True,True,False,False,True]),("Lucia",Enfermo,[True,False,False,False,True]),
+("Valeria",Enfermo,[True,False,False,True,False]),("Joaquin",Enfermo,[False,True,False,True,False])]
+
+[Fiebre,Moco,Rubor,DolorArtic,DolorCabeza]
+
+Enfermo
+
+-- Comincia per chiedersi se ci sono dei registri
+(length rs) == 0 ? False (E 8)
+
+-- Si chiede se (length ats == 0) || (((length (regsClase (maxClase rs) rs)) == (length rs)))
+(length ats) == 0 ? False (E 5)
+((length (regsClase (maxClase rs) rs)) == (length rs)) == 0 ? False (((length (regsClase (maxClase rs) rs)) = 5)
+
+-- Siccome sono tutti i due falsi ritorna...
+Nodo Fiebre (Recursiva) ...
+
+... Recursiva
+
+id3
+
+[("Juan",Sano,[False,False,False,False,False]),("Manuela",Incubando,[False,True,True,False,True]),("Nora",Sano,[False,True,False,False,True]),("Joaquin",Enfermo,[False,True,False,True,False])]
+
+[Moco,Rubor,DolorArtic,DolorCabeza]
+
+Enfermo
+
+-- Si chiede se ci sono dei registri
+(length rs) == 0 ? False (E 4)
+
+-- Si chiede se (length ats == 0) || (((length (regsClase (maxClase rs) rs)) == (length rs)))
+(length ats) == 0 ? False (E 4)
+((length (regsClase (maxClase rs) rs)) == (length rs)) ? False (E 2)
+
+-- Siccome sono tutti i due falsi ritorna
+Nodo Rubor (Recursiva) ...
+
+... Recursiva
+
+id3
+
+[("Juan",Sano,[False,False,False,False,False]),("Nora",Sano,[False,True,False,False,True]),("Joaquin",Enfermo,[False,True,False,True,False])]
+
+[Moco,DolorArtic,DolorCabeza]
+
+Sano
+
+-- Si chiede se ci sono dei registri
+(length rs) == 0 ? False (E 3)
+
+-- Si chiede se (length ats == 0) || (((length (regsClase (maxClase rs) rs)) == (length rs)))
+(length ats) == 0 ? False (E 3)
+((length (regsClase (maxClase rs) rs)) == (length rs)) ? False (E 2)
+
+-- Siccome sono tutti i due falsi ritorna
+Nodo 
+
+DIVISIONE SU 0 FIGLIA DI TROIA!! TI ABBIAM TROVATO!! ADESSO TI AMAZZIAMO!
